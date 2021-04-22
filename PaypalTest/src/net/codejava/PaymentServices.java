@@ -83,7 +83,8 @@ public class PaymentServices {
 		amount.setCurrency("USD");
 		amount.setTotal(orderDetail.getTotal());
 		amount.setDetails(details);
-
+		
+System.out.println("Amount is: "+amount);
 		Transaction transaction = new Transaction();
 		transaction.setAmount(amount);
 		transaction.setDescription(orderDetail.getProductName());
