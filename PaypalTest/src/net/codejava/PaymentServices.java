@@ -77,7 +77,7 @@ public class PaymentServices {
 		Details details = new Details();
 		details.setShipping(orderDetail.getShipping());
 		details.setSubtotal(orderDetail.getSubtotal());
-		details.setTax(orderDetail.getTax());
+		details.setTax(orderDetail.getTax()); 
 
 		Amount amount = new Amount();
 		amount.setCurrency("USD");
